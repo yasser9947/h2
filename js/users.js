@@ -33,7 +33,7 @@ const idOfUser = localStorage.getItem("user");
 let alive = localStorage.getItem("alive");
 let name = localStorage.getItem("name");
 let position = localStorage.getItem("position");
-
+let playerIndex = 0;
 const auth = getAuth();
 console.log(auth);
 onAuthStateChanged(auth, (user) => {
@@ -113,6 +113,13 @@ function startGame(db, theName) {
     onValue(ref(db, 'questions/'), (snapshot) => {
         options.forEach(o => { o.style.border = ''; o.style.background = "none"; o.style.color = "#fff" })
         index = snapshot.val()['index']
+        console.log("index" , index);
+        console.log("playerIndex" , playerIndex);
+        if (snapshot.val()['showWinners'] && alive ) {
+            winner.style.display = "block"
+            startOfTheGame.style.display = "none";
+            return;
+        }
         if (!snapshot.val()['startGame'] && !snapshot.val()['showWinners']) {
             startOfTheGame.style.display = "none";
             beforeStartTheGame.style.display = "block";
@@ -151,6 +158,7 @@ function startGame(db, theName) {
                             option2.innerHTML = questions[index]['options'][1]
                             option3.innerHTML = questions[index]['options'][2]
                             option4.innerHTML = questions[index]['options'][3]
+                            alive = true;
                             set(ref(db, 'users/' + idOfUser), {
                                 index: index,
                                 name: theName,
@@ -200,6 +208,7 @@ function startGame(db, theName) {
                         name: getname.value,
                         alive: false
                     }).then(() => {
+                        alive = false;
                         localStorage.setItem("alive", false);
                         location.reload();
                     }).catch((error) => {
