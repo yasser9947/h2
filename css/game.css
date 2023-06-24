@@ -1,6 +1,21 @@
 *{
     box-sizing: border-box;
 }
+:root{
+  --color1 : #202022;
+  --color2 : #b09573;
+  --color3 :#977f5f;
+  /* #b09573 */
+  /* #202022 */
+}
+.logo-title{
+  color: var(--color2);
+  letter-spacing: 4px;
+}
+.logo-title h3 {
+  font-size: 31px;
+    margin-top: -31px;
+}
 /* #ffaa6a   #5e5550  #b8874c*/
 body {
     display: flex;
@@ -8,9 +23,9 @@ body {
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    background-color:  hsl(272.21deg 53.67% 34.71%);
+    background-color:  var(--color1);
     background-size: cover; 
-    background: linear-gradient( to top ,  hsl(272.21deg 53.67% 34.71%)  0%,rgb(41 115 180) 100%);
+    /* background: linear-gradient( to top ,  hsl(272.21deg 53.67% 34.71%)  0%,rgb(41 115 180) 100%); */
 
 
 }
@@ -34,7 +49,7 @@ body {
 }
 .question{
     padding: 20px;
-    background:hsl(272.21deg 53.67% 34.71%);
+    background:var(--color3);
     color: #ffffff;
     font-size: 16px;
     border-radius: 10px;

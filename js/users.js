@@ -215,7 +215,7 @@ function startGame(db, theName) {
         localStorage.setItem("clickOption", clickOption);
         options.forEach(o => { o.style.border = ''; o.style.background = "none"; o.style.color = "#fff" })
         option.style.border = '1px solid'
-        option.style.background = "rgb(78 206 245)"
+        option.style.background = "rgb(118 76 23)"
         option.style.color = "#fff"
     }))
     // end if the game 
