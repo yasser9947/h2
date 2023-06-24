@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحبار</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+<body>
+    <div class="wait">
+        <h1>انتظار </h1>
+    </div>
+    <div class="content" style="display: none;">
+    <img src="./img/logo.png" height="150px" alt="" srcset="" >
+    <br>
+    <img class="my-5" src="https://see.fontimg.com/api/renderfont4/1GMVL/eyJyIjoiZnMiLCJoIjo2OSwidyI6MTAwMCwiZnMiOjY5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/IFNxdWlkIEdhbWUg/game-of-squids.png"
+    alt="Squid fonts" id="squid-title"/>
+    <div class="main-box">
+        <h3 class="question mt-2">Download ...  </h3>
+        <div class="row m-4">
+            <div class="col-6 option my-3">
+                <h4 id="option-1" ></h4>
+            </div>
+            <div class="option col-6 my-3">
+                <h4 id="option-2"> </h4>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="option col-6 my-3  ">
+                <h4 id="option-3" > </h4>
+            </div>
+            <div class="option col-6 my-3">
+                <h4 id="option-4"> </h4>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-1 d-flex justify-content-around ">
+        <button class="close col-3 align-self-end" id="end-the-game"> 
+            انهاء اللعبة 
+        </button>
+        <button  class=" col-4 align-self-end m-3  raise" id="start-the-game"> 
+            بدء اللعبة
+        </button>
+        <button hidden class=" col-3 align-self-start raise" id="back">الرجوع </button>
+        <button class="pulse col-3 align-self-end btn" id="next"> 
+            التالي
+        </button>
+
+    </div>
+        <hr style="color: beige; font-size: 10px; height: 10px; width: 80%;display: block; margin: 15px  auto;">
+    <h3 id="winners" class="my-5"> 
+    <img src="https://see.fontimg.com/api/renderfont4/1GMVL/eyJyIjoiZnMiLCJoIjo2OSwidyI6MTAwMCwiZnMiOjY5LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/UExBWUVSUw/game-of-squids.png" alt="">  
+    <h2 id="total"></h2>  
+    </h3>
+ 
+    <div class="container mt-5 d-flex justify-content-end flex-wrap " id="players">
+       
+    </div>
+
+
+    
+</div>
+    <script src="js/init.js"  type="module"></script>
+    <script src="js/Question.js" ></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

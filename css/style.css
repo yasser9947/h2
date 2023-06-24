@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, #ffaa6a  0%, #5e5550 100%);
+}
+
+h2{
+    text-align: center;
+}
+
+.main-box{
+    padding: 20px;
+    background: #5e5550;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 1250px;
+    height: 315px;
+    
+}
+h3{
+    text-align: center;
+}
+
+
+.option{
+    cursor: pointer;
+}
+
+.currect {
+    animation: hig  2s  infinite ease-in;
+    border-radius: 10px;
+}
+
+.custom-p{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.right{
+
+    text-align: right;
+}
+
+.right input {
+    text-align: right;
+}
+
+@keyframes hig {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: green;
+    }
+}

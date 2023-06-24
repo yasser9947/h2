@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <title>لعبة الحبار (علم)</title>
+</head>
+
+<body>
+    <div class="custem-fixed">
+        Create by <span> Yasir Almuhtrish</span>
+    </div>
+    <div class="container" style="display: none;">
+        <!-- form start  -->
+
+        <div id="form">
+            <img src="./img/logo.png" class="mb-5" height="100px" alt="" srcset="">
+            <div class="main-box">
+                <div class="mb-5 mx-2 right">
+
+                    <label for="" class="form-label border-light text-light font-weight-bold"
+                        style="font-weight: bold;">:الاسم الثلاثي </label>
+                    <input id="name" class="form-control" placeholder="...">
+
+                    <div class="row my-3 mb-5 mx-1  d-flex justify-content-end">
+                        <div class="col-6">
+                            <label for="" class="form-label border-light text-light">:آفاتار</label>
+                            <select id="avatar" class="form-select form-select-sm">
+                                <option value="">بلا</option>
+                                <option value="🐯">🐯</option>
+                                <option value="🐶">🐶</option>
+                                <option value="🦅">🦅</option>
+                                <option value="🦂">🦂</option>
+                                <option value="🐌">🐌</option>
+                                <option value="🐙">🐙</option>
+                                <option value="🐪">🐪</option>
+                                <option value="🐝">🐝</option>
+                                <option value="🦜">🦜</option>
+                                <option value="🦅">🦅</option>
+                                <option value="🦏">🦏</option>
+                                <option value="🐔">🐔</option>
+                                <option value="🦁">🦁</option>
+                                <option value="🐴">🐴</option>
+                                <option value="🐐">🐐</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row d-flex justify-content-end">
+                    <div class="col-3 btn btn-outline-success mx-3" style="border: 1px solid #fff; color:#fff "
+                        id="continue"> استمر</div>
+                </div>
+            </div>
+        </div>
+        <!-- before start the game   -->
+        <div id="before-start-the-game">
+
+            <h1 style="   
+             font-family: ui-monospace;
+            color: wheat;
+            opacity: 0.6;"> في انتظار بدأ اللعبة </h1>
+
+        </div>
+        <!-- start the game   -->
+        <div id="start-the-game">
+            <img src="./img/logo.png" class="mb-5" height="100px" alt="" srcset="">
+
+            <div class="main-box">
+                <div class="msg">
+
+                </div>
+                <div id="qq">
+                    <h3 class="question mt-2"> the question</h3>
+                    <div class="row">
+                        <div class="col-12 option ">
+                            <h4 id="option-1">option 1 </h4>
+                        </div>
+                        <div class="option col-12 ">
+                            <h4 id="option-2">option 2 </h4>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="option col-12">
+                            <h4 id="option-3">option 3 </h4>
+                        </div>
+                        <div class="option col-12">
+                            <h4 id="option-4">option 4 </h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="qw">
+                    <div class="loader fixed"><span class="box"><span class="inner"></span></span><span class="box"><span class="inner"></span></span></div>
+                    <p style="font-family: fantasy;">Waiting for players answers</p>
+                </div>
+            </div>
+        </div>
+        <!-- out of game  -->
+        <div id="end-the-game">
+            <h3> <img height="50px" class="m-3"
+                    src="https://see.fontimg.com/api/renderfont4/owna0/eyJyIjoiZnMiLCJoIjo5NSwidyI6MTAwMCwiZnMiOjk1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/R0FNRSBPVkVSIC4uLg/featuristic.png"
+                    alt="" srcset="" />
+            </h3>
+        </div>
+    </div>
+    <div id="winner" style="display: none;">
+        <h3> مبروك الفوز
+        </h3>
+        <img src="https://thumbs.gfycat.com/ZanyExcellentGoldfinch-size_restricted.gif" alt="" srcset="">
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/init.js" type="module"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/users.js" type="module"></script>
+</body>
+
+</html>
