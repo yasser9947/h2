@@ -278,3 +278,15 @@ button:hover{
   opacity: 1;
   transition: opacity 250ms 1.5s ease-in;
 }
+
+
+
+
+ 
+ 
+@media only screen and (max-width: 991px){
+
+  .image{
+    width: 265px;
+  }
+}
