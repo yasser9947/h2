@@ -177,7 +177,7 @@ const  questions  =  [
      "الحصان",
      "الضفدع"//this
   ],
-  "currectOption": 2
+  "currectOption": 3
 },
 {
   "question": "ما هو الشيء الذي يأتي مرة في الدقيقة، مرتين في اللحظة، ولا يأتي مرة في الساعة",
