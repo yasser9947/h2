@@ -26,6 +26,11 @@ let clickOption = localStorage.getItem("clickOption");
 const avatar = document.querySelector("#avatar")
 document.querySelector(".msg").innerText = wisdoms[n];
 document.querySelector(".msg").style.display = "none"
+console.log(localStorage.getItem("alwasam"))
+if (!localStorage.getItem("alwasam")){
+    localStorage.clear();
+    localStorage.setItem("alwasam",true);
+}
 
 !localStorage.getItem("user") ? localStorage.setItem("user", uuid.v4()) : null;
 
